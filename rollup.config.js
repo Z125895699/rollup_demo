@@ -6,8 +6,9 @@
  * @FilePath: /rollup/rollup.config.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
-
+//是为了允许我们加载第三方依赖，否则像import React from 'react' 的依赖导入语句将不会被 Rollup 识别
 import resolve from "@rollup/plugin-node-resolve";
+//将 CommonJS 格式的代码转换为 ESM 格式
 import commonjs from "@rollup/plugin-commonjs";
 // rollup.config.js
 // 以下注释是为了能使用 VSCode 的类型提示
